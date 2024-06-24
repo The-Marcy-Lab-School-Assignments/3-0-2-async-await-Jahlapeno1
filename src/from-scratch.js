@@ -1,5 +1,6 @@
 export const fetchHandler = async (url, options ={}) => {
   try {
+    /** FEEDBACK: Great job getting all test cases to pass! */
     const response = await fetch(url, options)
     if (!response.ok) {
       throw new Error(`Fetch failed with status - ${response.status}, ${response.statusText}`)
